@@ -1,5 +1,6 @@
 package com.example.gaetan.guitartollsapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -34,16 +35,21 @@ public class ChordsGenerator extends AppCompatActivity {
         adapter_chords.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner_chords.setAdapter(adapter_chords);
 
-        // Spinner item selection Listener
-        //A voir pour utiliser avec un bouton
-        addListenerOnSpinnerItemSelection();
+        button_selected.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "vous cliquer", Toast.LENGTH_LONG).show();
 
-    }
+                //agit dès que l'on clique sur le spinner alors qu'il devrait attendre le clique du boutton non ?
+                spinner_chords.setOnItemSelectedListener(new CustomOnItemSelectedListener());
+            }
+        });
 
-
-    // Add spinner data
-    public void addListenerOnSpinnerItemSelection() {
-        spinner_chords.setOnItemSelectedListener(new CustomOnItemSelectedListener());
     }
 }
+
+
+
+
+
 

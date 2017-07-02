@@ -10,22 +10,26 @@ public class CustomOnItemSelectedListener implements OnItemSelectedListener {
     public void onItemSelected(AdapterView<?> parent, View view, int pos,
                                long id) {
 
-      /*  Toast.makeText(parent.getContext(),
-                "On Item Select : \n" + parent.getItemAtPosition(pos),
-                Toast.LENGTH_LONG).show();*/
-
-        switch(pos) {
+        switch (pos) {
             default:
+                /**Toast.makeText(parent.getContext(),
+                 "On Item Select : \n" + parent.getItemAtPosition(pos),
+                 Toast.LENGTH_LONG).show();**/
+
                 Toast.makeText(getApplicationContext(), "vous choisissez C", Toast.LENGTH_LONG).show();
                 imageView.setImageResource(R.drawable.c);
                 break; // optional
 
-            case 1 :
+            case 1:
+                /**Toast.makeText(parent.getContext(),
+                 "On Item Select : \n" + parent.getItemAtPosition(pos),
+                 Toast.LENGTH_LONG).show();**/
+
                 Toast.makeText(getApplicationContext(), "vous choisissez Db", Toast.LENGTH_LONG).show();
                 imageView.setImageResource(R.drawable.db);
                 break; // optional
 
-            case 2 :
+           /* case 2 :
                 Toast.makeText(getApplicationContext(), "vous choisissez D", Toast.LENGTH_LONG).show();
                 imageView.setImageResource(R.drawable.d);
                 break;
@@ -78,7 +82,7 @@ public class CustomOnItemSelectedListener implements OnItemSelectedListener {
             case 12 :
                 Toast.makeText(getApplicationContext(), "vous choisissez B", Toast.LENGTH_LONG).show();
                 imageView.setImageResource(R.drawable.b);
-                break;
+                break;*/
 
         }
     }
