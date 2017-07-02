@@ -5,6 +5,8 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.Toast;
 
+
+
 public class CustomOnItemSelectedListener implements OnItemSelectedListener {
 
     public void onItemSelected(AdapterView<?> parent, View view, int pos,
@@ -12,11 +14,13 @@ public class CustomOnItemSelectedListener implements OnItemSelectedListener {
 
         switch (pos) {
             default:
-                /**Toast.makeText(parent.getContext(),
+                Toast.makeText(parent.getContext(),
                  "On Item Select : \n" + parent.getItemAtPosition(pos),
-                 Toast.LENGTH_LONG).show();**/
+                 Toast.LENGTH_LONG).show();
 
-                Toast.makeText(getApplicationContext(), "vous choisissez C", Toast.LENGTH_LONG).show();
+
+
+               /* Toast.makeText(getApplicationContext(), "vous choisissez C", Toast.LENGTH_LONG).show();
                 imageView.setImageResource(R.drawable.c);
                 break; // optional
 
@@ -25,9 +29,10 @@ public class CustomOnItemSelectedListener implements OnItemSelectedListener {
                  "On Item Select : \n" + parent.getItemAtPosition(pos),
                  Toast.LENGTH_LONG).show();**/
 
-                Toast.makeText(getApplicationContext(), "vous choisissez Db", Toast.LENGTH_LONG).show();
-                imageView.setImageResource(R.drawable.db);
-                break; // optional
+               // Toast.makeText(getApplicationContext(), "vous choisissez Db", Toast.LENGTH_LONG).show();
+               // imageView.setImageResource(R.drawable.db);
+              //  break; // optional
+
 
            /* case 2 :
                 Toast.makeText(getApplicationContext(), "vous choisissez D", Toast.LENGTH_LONG).show();
