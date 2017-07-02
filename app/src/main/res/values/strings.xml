@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">GuitarTollsApp</string>
+    <string name="chord_spinner">chords</string>
+    <string name="type_spinner">types</string>
+    <string name="show_button">selectionner</string>
+    <string-array name="chords_array">
+        <item>C</item>
+        <item>Db</item>
+        <item>D</item>
+        <item>Eb</item>
+        <item>E</item>
+        <item>F</item>
+        <item>Gb</item>
+        <item>G</item>
+        <item>Ab</item>
+        <item>A</item>
+        <item>Bb</item>
+        <item>B</item>
+    </string-array>
+
+    <string-array name="chordstype_array">
+        <item>Maj</item>
+        <item>Min</item>
+    </string-array>
+</resources>
